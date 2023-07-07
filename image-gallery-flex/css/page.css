@@ -1,0 +1,35 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+
+.meta {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* border: 1px solid red; */
+}
+.meta::before {
+  content: '';
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #000;
+  z-index: 2;
+}
+.meta::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1px;
+  height: 1px;
+  width: 100%;
+  background: #e5e5e5;
+}
